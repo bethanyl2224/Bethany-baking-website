@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/3183b9b342.js">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&amp;display=swap" rel="stylesheet"/>
+  <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1 class="title">
+    Bethany's Bakings
+   </h1>
+   <h3 class="sub_title">
+    Your Baking Journey Starts From Here -&gt;-&gt;
+   </h3>
+   <!-- search bar implementation-->
+   <form class="form" method="post">
+    <input class="data" name="request_data" type="text"/>
+    <button class="submit-btn" type="submit">
+     <i class="fa-solid fa-magnifying-glass">
+     </i>
+    </button>
+   </form>
+   <div class="container">
+    <p>
+     <span class="intro">
+      What to Bake Today!
+     </span>
+     .
+    </p>
+   </div>
+   <div class="tab">
+    <ul class="menu">
+     <li>
+      <a href="{{ url_for('home') }}">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="{{ url_for('Recipes') }}">
+       Recipes
+      </a>
+     </li>
+     <li>
+      <a href="{{ url_for('about') }}">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="{{url_for('subscribe')}}">
+       Subscribe
+      </a>
+     </li>
+    </ul>
+   </div>
+   <!--where insert the extend html -->
+   {%block content%}
+
+    {%endblock%}
+   <div class="info" style="visibility:{{ visibility }}">
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=SpT8VrwypVI">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image0.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      【零失败】简易芒果糯米饭 Delicious Mango Sticky Rice with Zero Failure
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=LBKdluzg07Y">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image1.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      Healthy Blueberry Banana Pancake in 2 Minutes 无糖 无面粉 健康蓝莓香蕉松饼
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=EsPs8KdN-To">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image2.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      【Soft Like Cloud】Coconut Condense Milk Bread  像云朵一样柔软的椰奶炼乳面包
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=8-y0ARSh4Jo">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image3.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      Easiest No-Knead Garlic Bread! 【Crispy Layer】 No stand mixer 免揉蒜香面包 外脆内软 不用机器也可以拉出薄膜
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=s0QObfaKW6c">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image4.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      新手甜品 零失败 椰汁豆沙糯米糍 【Zero Failure】 Coconut Red Bean Mochi
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=lhaOkG94NI8">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image5.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      超松软 蜂蜜排包  Super Soft Honey Windsor Bread
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=6rAvo7aGJBg">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image6.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      3 Delicious Chia Seed Pudding Ideas 【健康美味】 三款奇亚籽布丁
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=0LAj4eGOHk4">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image7.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      超浓郁～ 抹茶豆沙包  Matcha Red Bean Paste Bread
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=VhTShFBs7AQ">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image8.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      简易白吐司 Rich Milk Bread Loaf/ Shokupan
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=ayBYhBkc_kM">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image9.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      Make Cream Bread in 1 Minute!
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=qvleDAzUjUI">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image10.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      淡奶油吐司 Cream Milk Loaf
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=xVByjaoPBkc">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image11.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      双色紫薯面包 Purple Yam Swirl Bread
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=Xr8-DbZQvKw">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image12.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      抹茶双色花环面包 Matcha Wreath Bread
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=jk8yky8Vifw">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image13.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      无油无糖 免揉面包 [No Oil &amp; No Sugar] No-Knead Country Bread
+     </label>
+    </div>
+    <div class="recipe">
+     <a href="http://youtube.com/watch?v=gDKSHKCFQ7E">
+      <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image14.jpg/"/>
+     </a>
+     <label class="label_recipe">
+      辫子面包 Challah Bread
+     </label>
+    </div>
+   </div>
+   <div class="end_screen">
+    <div class="screen_container">
+     <div class="links_container">
+     </div>
+     <label class="copy_right">
+      Copyright 2022 Bethany'sBaking. All Rights Reserved
+     </label>
+    </div>
+   </div>
+  </header>
+ </body>
+</html>

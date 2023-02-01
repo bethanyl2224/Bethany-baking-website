@@ -1,0 +1,64 @@
+
+.info > div{
+  /*transition: all .1s cubic-bezier(.3, 0, .2, 1);*/
+  user-select: none;
+  position:relative;
+  align-items:stretch;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+
+
+
+}
+
+.info > div:hover{
+  background-color: #ffe4e1;
+  size: 40%;
+  width: 340px;
+  height:200px;
+
+
+}
+
+
+
+
+
+
+
+img{
+  size: 10%;
+  width: 300px;
+  height:200px;
+  align-self: center
+  border-radius: 8px;    /* this makes the edge of the image round*/
+  position:relative;
+  vertical-align: top;
+  display:block;
+
+
+}
+
+/*set style into horizontal stack*/
+
+
+.info> div{
+  float: left;
+  width:30%;
+  padding: 5px;
+
+}
+
+.info::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and(max-width: 758px){
+  .info>div{
+    width:100%
+  }
+}

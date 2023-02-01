@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&amp;display=swap" rel="stylesheet"/>
+  <link href="{{url_for('static',filename='css/my_main.css')}}" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1 class="title">
+    Bethany's Bakings
+   </h1>
+   <h3 class="slogan">
+    Enjoy Baking -&gt; :)
+   </h3>
+   <div class="social_media">
+    <ul class="media">
+     <a href="https://www.youtube.com/channel/UC0lElgjir4PdC2GGa_aWfOQ">
+      <img alt="can't find img" class="media_pic" img="" src="http://127.0.0.1:5000/static/youtube.jpeg"/>
+     </a>
+     <li>
+      <a href="https://www.instagram.com/bethcookingvlog/">
+       <img alt="can't find img" class="media_pic" img="" src="http://127.0.0.1:5000/static/instagram_icon.png"/>
+      </a>
+     </li>
+     <li>
+      <a href="https://www.tiktok.com/@bethany_baking">
+       <img alt="can't find img" class="media_pic" img="" src="http://127.0.0.1:5000/static/tiktok.jpeg"/>
+      </a>
+     </li>
+     <li>
+     </li>
+    </ul>
+   </div>
+   <div class="tab">
+    <ul class="menu">
+     <li>
+      <a href="{{ url_for('home') }}">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="{{ url_for('Recipes') }}">
+       Recipes
+      </a>
+     </li>
+     <li>
+      <a href="{{ url_for('about') }}">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="{{url_for('subscribe')}}">
+       Subscribe
+      </a>
+     </li>
+    </ul>
+   </div>
+   {%block content%}
+
+
+  {%endblock%}
+   <div class="container" style="visibility: {{visibility}}">
+    <div class="logo">
+     <div class="logo1">
+      <label class="label_big">
+       Explore the joy of Baking
+      </label>
+      <img alt="can't find img" class="logo_pic" img="" src="http://127.0.0.1:5000/static/pictures/cream_bread.png"/>
+      <a class="more_link" href="{{ url_for('Recipes') }}">
+       more recipes
+      </a>
+      <img alt="can't find img" class="small_logo" src="http://127.0.0.1:5000/static/pictures/bread_icon.png"/>
+     </div>
+     <label class="recipe_label">
+      Checkout Latest Recipes
+     </label>
+     <img alt="can't find img" class="bakery_logo" src="http://127.0.0.1:5000/static/pictures/bakery.png"/>
+     <div class="newest_recipe_scroll">
+      <div class="recipe">
+       <a href="http://youtube.com/watch?v=SpT8VrwypVI">
+        <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image0.jpg/"/>
+       </a>
+       <label class="label_scroll">
+        【零失败】简易芒果糯米饭 Delicious Mango Sticky Rice with Zero Failure
+       </label>
+       <label class="recipe_description">
+        Delicious glutinous rice with sweet mango and coconut taste", Perfect flourless blueberry Pancakes
+       </label>
+      </div>
+      <div class="recipe">
+       <a href="http://youtube.com/watch?v=LBKdluzg07Y">
+        <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image1.jpg/"/>
+       </a>
+       <label class="label_scroll">
+        Healthy Blueberry Banana Pancake in 2 Minutes 无糖 无面粉 健康蓝莓香蕉松饼
+       </label>
+       <label class="recipe_description">
+        The irrestible taste of the coconut infusing in the bread
+       </label>
+      </div>
+      <div class="recipe">
+       <a href="http://youtube.com/watch?v=EsPs8KdN-To">
+        <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image2.jpg/"/>
+       </a>
+       <label class="label_scroll">
+        【Soft Like Cloud】Coconut Condense Milk Bread  像云朵一样柔软的椰奶炼乳面包
+       </label>
+       <label class="recipe_description">
+        Home-made garlic butter with crispy bread
+       </label>
+      </div>
+      <div class="recipe">
+       <a href="http://youtube.com/watch?v=8-y0ARSh4Jo">
+        <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image3.jpg/"/>
+       </a>
+       <label class="label_scroll">
+        Easiest No-Knead Garlic Bread! 【Crispy Layer】 No stand mixer 免揉蒜香面包 外脆内软 不用机器也可以拉出薄膜
+       </label>
+       <label class="recipe_description">
+        Traditional coconut glutinous rice ball with sweet red bean
+       </label>
+      </div>
+      <div class="recipe">
+       <a href="http://youtube.com/watch?v=s0QObfaKW6c">
+        <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image4.jpg/"/>
+       </a>
+       <label class="label_scroll">
+        新手甜品 零失败 椰汁豆沙糯米糍 【Zero Failure】 Coconut Red Bean Mochi
+       </label>
+       <label class="recipe_description">
+        Family-size sweet bread made with 100% real honey
+       </label>
+      </div>
+      <div class="recipe">
+       <a href="http://youtube.com/watch?v=lhaOkG94NI8">
+        <img alt="can't find img" class="recipe" img="" src="http://127.0.0.1:5000/static/All_Images/image5.jpg/"/>
+       </a>
+       <label class="label_scroll">
+        超松软 蜂蜜排包  Super Soft Honey Windsor Bread
+       </label>
+       <label class="recipe_description">
+        Explore 3 ways to make chia seed pudding
+       </label>
+      </div>
+     </div>
+    </div>
+    <div class="logo2">
+     <label class="label_big">
+      Try Traditional Asian Cuisine
+     </label>
+     <img alt="can't find img" class="small_logo" src="http://127.0.0.1:5000/static/pictures/mochi.png"/>
+     <img alt="can't find img" class="logo_pic" img="" src="http://127.0.0.1:5000/static/pictures/matcha.png"/>
+    </div>
+    <div class="about_me">
+     <img alt="can't find img" class="self-img" img="" src="http://127.0.0.1:5000/static/my_img.jpeg"/>
+     <label class="about_info">
+      Hey! I'm Bethany
+     </label>
+     <label class="more_info">
+      Anyone can start baking! Come join me in my baking journey to turn the soft, pliable dough into your beautiful creation.
+     </label>
+     <a class="more_about" href="{{ url_for('about') }}">
+      Learn more about me
+     </a>
+    </div>
+    <div class="logo3">
+     <label class="label_big">
+      And Much More to Explore!
+     </label>
+     <img alt="can't find img" class="small_logo" src="http://127.0.0.1:5000/static/pictures/bake.png"/>
+     <img alt="can't find img" class="logo_pic" img="" src="http://127.0.0.1:5000/static/pictures/cake.png"/>
+    </div>
+   </div>
+   <div class="end_screen">
+    <div class="screen_container">
+     <div class="links_container">
+      <a class="end" href="{{url_for('home') }}">
+       Home
+      </a>
+      <a class="end" href="{{ url_for('Recipes') }}">
+       Recipes
+      </a>
+      <a class="end" href="{{ url_for('about') }}">
+       About
+      </a>
+      <a class="end" href="{{url_for('subscribe')}}">
+       Subscribe
+      </a>
+      <label class="copy_right">
+       ©2022 Bethany'sBaking. All Rights Reserved
+      </label>
+     </div>
+    </div>
+   </div>
+  </header>
+ </body>
+</html>
