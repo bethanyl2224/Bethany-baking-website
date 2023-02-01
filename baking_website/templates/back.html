@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&amp;display=swap" rel="stylesheet"/>
+  <link href="{{url_for('static',filename='css/main.css')}}" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <h1 class="title">
+    Bethany's Bakings
+   </h1>
+   <div class="tab">
+    <ul class="menu">
+     <li>
+      <a href="{{ url_for('home') }}">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="{{ url_for('Recipes') }}">
+       Recipes
+      </a>
+     </li>
+     <li>
+      <a href="{{ url_for('about') }}">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="{{url_for('subscribe')}}">
+       Subscribe
+      </a>
+     </li>
+    </ul>
+   </div>
+
+    <! search bar implementation>
+   <div class="search_bar">
+         <form action="#">
+             <input type="text"
+                 placeholder=" search for recipes"
+                 name="search">
+             <button>
+                 <i class="submit-btn"
+                     style="font-size: 30px;">
+                 </i>
+             </button>
+         </form>
+     </div>
+ </div>
+
+
+
+
+
+   <div class="container">
+    <p>
+     <span class="intro">
+      What to Bake Today!
+     </span>
+     .
+    </p>
+    <div class="info">
+     <div class="bread_in">
+      <a href="https://www.youtube.com/watch?v=qvleDAzUjUI&amp;t=11s">
+       <img alt="can't find img" class="bread" img="" src="http://127.0.0.1:5000/static/cream_bread.png"/>
+      </a>
+      <label class="label_bread">
+      </label>
+     </div>
+     <div class="bread_matcha">
+      <a href="https://www.youtube.com/watch?v=0LAj4eGOHk4&amp;t=78s">
+       <img alt="can't find img" class="matcha" img="" src="http://127.0.0.1:5000/static/matcha.png"/>
+      </a>
+      <label class="label_matcha">
+      </label>
+     </div>
+     <div class="bread_cake">
+      <a href="https://www.youtube.com/watch?v=DchDFSaXRbI&amp;t=3s">
+       <img alt="can't find img" class="cake" img="" src="http://127.0.0.1:5000/static/cake.png"/>
+      </a>
+      <label class="label_matcha">
+      </label>
+     </div>
+
+    </div>
+
+   </div>
+  </header>
+ </body>
+</html>
+<div class="container">
+ {%block content%}
+          {%endblock%}
+</div>

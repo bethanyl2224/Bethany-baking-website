@@ -1,0 +1,41 @@
+.my_info{
+  top:0px;
+  display: incline-block;
+  align-items: baseline;
+}
+
+
+
+
+.face_img{
+  position: sticky;
+  left:850px;
+  display: incline-block;
+
+  border-radius: 40%;
+  width:320px;
+  height:400px;
+  float: left;
+}
+
+
+.about_me_text{
+  font-family:'Raleway', cursive;
+  font-size: 35px;
+}
+
+
+
+
+header h1.about_page{
+  font-family: 'Caveat', cursive;
+  position:sticky;
+  font-weight: lighter;
+  display: incline-block;
+  width:380px;
+  height:400px;
+  font-size:30px;
+  padding-left: 200px;
+  float: left;
+
+}

@@ -1,0 +1,392 @@
+
+@@font-face {
+  font-family: 'Cedarville Cursive', cursive;
+}
+
+
+@@font-face {
+  font-family: 'Caveat', cursive;
+}
+
+
+/* add animation effect -> when reloading the screen */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+body{
+
+  opacity: 1;
+   -webkit-animation: fadein 2s;
+}
+
+
+
+
+
+
+.center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+ }
+
+.container{
+  position: relative;
+  top:150px;
+
+  white-space: normal;
+
+}
+
+
+header h1.title{
+   margin: 50;
+  left:50px;
+  top:20px;
+   padding-left: 20px;
+  font-size: 60px;
+  font-family: 'Raleway', cursive;
+   color: #E87777;
+   margin: 0.8em;
+   border-bottom-width:2.0em;
+   border-bottom-style:solid;
+   border-bottom-color:#EEC0C6;
+
+
+
+
+}
+
+
+header h3.sub_title{
+  position: relative;
+  display: inline;
+  top:-120px;
+  left:80px;
+
+  font-size: 40px;
+  font-family: 'Caveat', cursive;
+  color: #FFFFFF;
+
+
+
+
+}
+
+
+.tab{
+  position: absolute;
+  right: 200px;
+  top:15px;
+
+
+
+
+
+}
+
+ul li { display: inline;
+  margin-right: 20px;
+  width: 100%; }
+
+
+
+
+
+ul li > a:link not(:last-child) {
+  margin-right: 10px;
+  width: 100%;
+
+}
+
+
+}
+
+ ul li > a:link{
+  background-color: #fff;
+
+  position:relative;
+  /*border-radius: 0.5rem;*/
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+
+  padding: 0.3rem 1rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+
+/* CSS */
+  ul li> a:link {
+  background-color: #fff;
+  /*border: 0 solid #e2e8f0;*/
+  position:relative;
+    /*border-radius: 0.5rem;*/
+  color: "black";
+  cursor: pointer;
+  display: inline-block;
+
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+
+  /*transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 185, 0.25);*/
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+ ul li > a:hover {
+  background-color: #fac4c0;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  ul li > a:link{
+    font-size: 1.7rem;
+    color:"black";
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem 0.9rem;
+  }
+}
+
+
+.intro{
+  position: absolute;
+  left: 100px;
+  top:-250px;
+  color:#003333;
+  font-size:50px;
+  font-family: 'Caveat', cursive;
+
+}
+
+
+
+
+
+
+
+
+
+.info{
+  /*able to align items three in row*/
+  display: flex;
+
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-left:130px;
+}
+
+
+.info > div{
+  /*transition: all .1s cubic-bezier(.3, 0, .2, 1);*/
+  user-select: none;
+  width: 30%;
+  padding: 5px;
+  position:relative;
+
+
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+
+
+
+
+
+}
+
+
+.info > div:hover{
+  background-color: #FFFFFF;
+  size: 40%;
+  width: 340px;
+  height:inherit;
+
+
+}
+
+
+
+
+
+
+
+img{
+
+  left:20px;
+  width: 300px;
+  height:200px;
+
+  border-radius: 8px;    /* this makes the edge of the image round*/
+  position:absolute;
+
+
+  margin:auto
+
+
+}
+
+/*set style into horizontal stack*/
+img:hover{
+  background-color: linear-gradient(to right, transparent, white);
+  opacity: 0.6;
+}
+
+.info> div{
+
+
+
+  padding:4px;
+  width:30%;
+  padding: 5px;
+  margin-bottom: 300px;
+
+}
+
+.info::after{
+  content: "";
+  clear: both;
+  display:flex
+}
+
+
+@media screen and(max-width: 758px){
+  .info>div{
+    width:100%
+  }
+}
+
+
+
+
+.recipe{
+  vertical-align: top;
+  top:0%;
+  text-align:left;
+  font-family: 'Caveat', cursive;
+  font-size: 13px;
+  z-index: 1;
+  padding:2px;
+
+
+
+
+
+
+}
+
+.label_recipe{
+
+  position: absolute;
+  top:220px;
+  left: 20px;
+  font-size: 13px;
+  margin-bottom: 30px;
+  width:300px;
+  height:20px;
+  word-wrap: break-word;
+  display: inline-block;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.form{
+  position:relative;
+
+
+  left:900px;
+
+  top:-172px;
+  size:100%;
+  width:400px;
+  height:100px;
+
+ padding:10px;
+
+}
+
+
+.form > .data{
+  border-radius: 8px;
+    display: inline;
+    font-family:"Caveat", cursive;
+    color:#808080;
+      font-size: 30px;
+      width: 70%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+
+
+
+   /* When the input field gets focus,
+        change its width to 100% */
+
+
+
+  .form > .submit-btn{
+    font-family: "Caveat", Cursive;
+
+      display: inline-block;
+    border-style: none;
+    background-color: none;
+    font-size: 30px;
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
