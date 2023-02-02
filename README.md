@@ -22,4 +22,4 @@ Additional: -link on the side of the page directly where user can find my YouTub
 My goal of the website is achieve my own learning goals on enhancing my skills in programming and problem solving abilities. I hope that I can spread my passion about baking to everyone!
 
 * Note:
-See instruction_for_website.txt for instruction on how run the website
+See instruction_for_website.txt for instruction on how to run the website
