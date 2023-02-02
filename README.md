@@ -9,7 +9,7 @@ The project is not complete as there is still some issues with formating/ additi
 The websites features include the Home, Recipes, About, and Subscribe
 
 Home page
--Introductory for my baking channel, what recipes I shared, etc
+-Introduce goals for my baking channel
 
 Recipes page
 -User can search and click the recipes on they like in the "Recipes" page. This will directly link them to Youtube page where user can checkout my recipe turorial on Youtube.
