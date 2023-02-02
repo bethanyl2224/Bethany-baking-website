@@ -4,14 +4,15 @@ Instruction:
 go to terminal
 
 In the command line:
-Make sure install terminal
+
+* Make sure to install flask
 
 1.) python -m pip install flask
 
 
 
 2.)
-enter python3 web.py in the command line
+enter python3 web.py 
 
 3.) go to http://127.0.0.1:5000
 
