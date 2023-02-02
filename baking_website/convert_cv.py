@@ -5,7 +5,6 @@ import urllib
 from urllib.request import urlopen
 
 
-
 def url_to_image(url,name):
 
       #opencv format
