@@ -8,28 +8,27 @@ import os
 
 
 global name
-#beautiful soup
-
-with open("./templates/Recipes.html") as my_file:
-    soup = BeautifulSoup(my_file, "html.parser")
-
-
 
 
 app = Flask(__name__)
 @app.route('/Recipes/', methods=[ 'GET', 'POST'])
 def Recipes():
-   #database.insert_data()
-
+   #database.insert_data() - test in database insert correctly
 
    if request.method == 'POST':
-       #clear the form
+       #clear the form if button click
+       
        form.delete()
+       #fetch request keyword from the user
        n = request.form['request_data']
+        
+       #search this particular data in the database, then display it
 
        all_data = database.search(str(n))
 
        form.display(all_data)
+        
+        
        return render_template("search.html", visibility = 'hidden')
 
    return render_template("Recipes.html")
