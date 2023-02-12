@@ -13,6 +13,11 @@ urls = [
 'Bethany-sBaking'
 ]
 
+"""
+Pafy -> use to get youtube metadata
+
+
+"""
 
 session = HTMLSession()
 response = session.get('https://www.youtube.com/c/Bethany-sBaking/videos?view=0&sort=dd&flow=grid')
@@ -22,24 +27,11 @@ urls = soup1.findAll('a', id = 'video-title')
 image_url = []
 
 
-'''
-
-class VideoObject:
-    def __init__(self, title, img_ip, link):
-        self.title = title
-        self.img_ip = img_ip
-        self.link = link
-
-    def print_all(self):
-       print("title: " + self.title + "\n" +
-              "time " + self.time + "\n"
-              + "link " + self.link + "\n")
-
-'''
-
-
-#not getting the short video
+#Note: not getting the Youtube short video for some reason
 def get_all_urls(arr):
+    """
+    get all_urls of the videos display on the Youtube Channel
+    """
      urls = []
      for i in range(len(arr)):
 
@@ -50,7 +42,7 @@ def get_all_urls(arr):
 
 
 def init_url():
-    #local variable
+    #url that we can use to fetch image and display on the website
     image_url = []
     for i in range(len(os.listdir('static/All_Images'))):
         image_url.append('http://127.0.0.1:5000/static/All_Images/image{num}.jpg'.format(num = str(i)))
@@ -65,10 +57,14 @@ image_url = init_url()
 
 
 def url_to_image(arr):
+      """
+      convert url_to_image and save in local directory
+      
+      """
 
       i = 0
       #opencv format
-      #download iamge, convert to a numpy array, and then read
+      #download image, convert to a numpy array, and then read and export to local directory
       for url in arr:
         video = pafy.new("{}".format(url))
 
@@ -77,7 +73,6 @@ def url_to_image(arr):
             resp = urllib.request.urlopen(video.bigthumbhd)
             image = np.asarray(bytearray(resp.read()), dtype = "uint8")
             image = cv2.imdecode(image, cv2.IMREAD_COLOR)
-
             path = '/Users/bethany/Desktop/baking_website_testing/static/All_Images/{na}'.format(na = name)
             cv2.imwrite(path, image)
         i+=1
@@ -92,6 +87,7 @@ image_url = init_url()
 
 
 def get_info(arr):
+    #export all extract info 
     info = {'title': [], 'img_ip': [], "link": []}
 
     for i in range(len(arr)):
@@ -120,9 +116,10 @@ video_urls = get_all_urls(urls)
 all_info = get_info(video_urls)
 
 
+
 data = pd.DataFrame(all_info)
 
-
+#convert data into info.csv file
 data.to_csv("/Users/bethany/Desktop/baking_website_testing/info.csv")
 
 
