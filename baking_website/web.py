@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, url_for
 #import class search form
 import database, image_append,form, scroll_view
-from wtforms import StringField
-from wtforms.validators import DataRequired
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
