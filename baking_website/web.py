@@ -29,21 +29,16 @@ def Recipes():
        form.display(all_data)
         
         
+       #after user click again, the search.html will be hidden 
        return render_template("search.html", visibility = 'hidden')
+      
+   #return back the recipe.html
 
    return render_template("Recipes.html")
 
 
 
 
-
-
-
-
-
-
-
-#pass stuff to file
 
 @app.route('/')
 def home():
@@ -58,11 +53,10 @@ def home():
 def about():
     return render_template("about.html", visibility = "hidden")
 
+   
 @app.route('/Subscribe')
 def subscribe():
     return render_template("subscribe.html")
-
-
 
 
 
