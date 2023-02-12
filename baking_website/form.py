@@ -1,4 +1,3 @@
-from wtforms import Form, StringField, SelectField
 import database
 from bs4 import BeautifulSoup
 import image_append
