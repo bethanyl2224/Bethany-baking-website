@@ -3,7 +3,11 @@ import numpy as np
 import urllib
 
 from urllib.request import urlopen
+"""
+this python file is for testing (not working):
+-Attempt to fetch image info using urlib, and use numpy array to convert image to binary, then next use cv2 to download all_images
 
+"""
 
 def url_to_image(url,name):
 
